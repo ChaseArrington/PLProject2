@@ -12,9 +12,6 @@ public abstract class Person {
 
     // Creates the constructor
     public Person(){
-        firstName = "";
-        lastName = "";
-        email = "";
     }
 
     // Creates the set and get methods for the firstName variable
@@ -41,6 +38,7 @@ public abstract class Person {
         return email;
     }
 
-    // Creates an abstract method for displaying the text
-    abstract void getDisplayText();
+    @Override
+    public String toString(){return "Name: " + firstName + " " + lastName + "\n" + "Email: " + email;}
+    abstract String getDisplayText();
 }
