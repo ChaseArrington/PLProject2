@@ -20,5 +20,7 @@ public class Customer extends Person {
         return customerNumber;
     }
 
+    @Override
+    public String getDisplayText() { return super.toString() + "\n" + "Customer Number: " + customerNumber;}
 
 }
